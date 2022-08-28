@@ -1280,6 +1280,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   main {
@@ -1305,7 +1306,7 @@ textarea {
     position: absolute;
     height: 90vh;
     right: 0;
-    bottom: -2px;
+    top: 85px;
     background-color: rgb(247, 248, 253);
     z-index: 10;
     position: absolute;
