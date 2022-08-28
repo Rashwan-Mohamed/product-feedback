@@ -9,6 +9,7 @@
 }
 html {
   margin: 0 auto;
+  overflow-x: hidden !important;
 }
 button {
   border: none;
@@ -55,6 +56,7 @@ body {
   background-color: $main;
   background-color: #f7f8fd;
   font-family: $fonts;
+  overflow-x: hidden !important;
 }
 
 main {
@@ -1320,7 +1322,13 @@ textarea {
     display: none;
   }
   .translate {
-    transform: translateX(280px);
+    overflow: hidden;
+    // transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
   }
   .overlay {
     width: 100vw;
