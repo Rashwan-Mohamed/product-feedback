@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import productRequestsReducer from '../features/productRequests/productRequestsrSlice'
+import showCatReducer from '../features/showCat/showCatSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    productRequests: productRequestsReducer,
+    showCat:showCatReducer,
   },
-});
+})
